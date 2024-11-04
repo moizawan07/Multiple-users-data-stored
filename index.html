@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashobard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="containerfor-signup">
+            <h1>Sign Up</h1>
+
+            <div class="inputs">
+            <input type="text" id="username" placeholder="Username"> <br>
+            <input type="email" id="email" placeholder="Email"> <br>
+            <input type="password" id="password" placeholder="Password"> <br>
+          <select id="SelectBox">
+            <option value="Role">Role</option>
+            <option value="Super Admin">Super Admin</option>
+            <option value="Admin">Admin</option>
+            <option value="Employe">Employe</option>
+          </select>
+            </div>
+            <div class="check">
+                <input type="checkbox"> <p>I agreee to the terms & Conditions </p>
+            </div>
+            <div class="but">
+                <button onclick="SignUp()">Sign Up</button>
+            </div>
+            <p class="lp">Already have an account? <a href="login.html">Sign In</a></p>
+
+            
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

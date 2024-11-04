@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.left-main-con{
+    width: 19%;
+    box-shadow: 0px 0px 2px black;
+    padding-inline: 1%;
+    padding-top: 20px;
+}
+.right-main-con{
+    width: 79.5%;  
+}
+.p{
+    display: inline-block;
+}
+.first-line p{
+  font-size: 13px;
+  color: grey;
+}
+.first-line img{
+    width: 50px;
+    position: relative;
+    top: 19px;
+}
+.first-line h4{
+   margin-top: 5px;
+    font-weight: bold;
+    margin-left: 55px;
+}
+
+
+select{
+    width: 180px;
+    height: 35px;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: #659ff7;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    padding-inline: 10px;
+}
+option{
+    background-color: white;
+}
+
+.third-line{
+    padding-top: 50px;
+    line-height: 55px;
+}
+.third-line p, .third-line p a{
+    font-size: 15px;
+    color: rgb(117, 115, 115);
+   text-decoration: none;
+}
+.third-line  i{
+    color: black;
+    margin-right: 3px;
+}
+.h{
+    width: 128%;
+    margin-top: 20px;
+    border: 0.55px solid rgb(183, 181, 181);
+    position: relative;
+    right: 15%;
+}
+
+i{
+    color: black;
+}
+
+.fouth-line {
+    padding-top: 20px;
+}   
+
+.headre{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputs{
+    width: 35%;
+    border-radius: 10px;
+    align-content: center;
+    height: 40px;
+    box-shadow: 0px 0px 5px grey;
+    margin-left: 20px;
+}
+.inputs i{
+    margin-left: 15px;
+    color: grey;
+}
+.inputs input{
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+.full{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+}
+.full img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.full i{
+    font-size: 20px;
+}
+.full b{
+    font-weight: bold;
+}
+
+.second-header{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(218, 214, 214);
+    background-color: rgb(240, 239, 239);
+
+}
+
+.second-fir{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.firsttt h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+.firsttt b{
+    font-size: 14px;
+}
+.red{
+    color: red;
+}
+
+.seconddd{
+    display: flex;
+    gap: 15px;
+}
+.seconddd p{
+    font-size: 12px;
+    font-weight: 500;
+    padding-inline: 10px;
+    padding-block: 3px;
+    background-color: #A3B6F7;
+    border-radius: 5px;
+}
+
+.second-lase-main{
+    border: 1px solid rgb(226, 218, 218);
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-inline: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding-inline: 20px;
+}
+.last-main{
+    border-radius: 5px;
+    padding-bottom: 30px;
+    border: 1px solid rgb(202, 200, 200);
+}
+
+.first-row{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #F9F7F1, #EBEEF8);
+}
+
+.second-row{
+    padding-inline: 20px;
+    position: relative;
+    bottom: 50px;
+}
+.second-row img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+.second-row h3{
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.second-row p {
+    font-size: 13px;
+    color: rgb(121, 119, 119);
+}
+
+.table{
+    padding-top: 50px;
+    padding-inline: 15px;
+}
+table{
+    width: 100%;
+    border: 1px solid rgb(235, 232, 232);
+    border-collapse: collapse;
+}
+td{
+   display: flow-root;
+    padding-block: 5px;
+    padding-inline: 15px;
+    color: rgb(89, 89, 89);
+    box-shadow: 0px 0px 3px rgb(8, 8, 8);
+}
+th{
+    font-weight: bold;
+    color: rgb(46, 45, 45);
+}
+tr{
+    border: 1px solid rgb(92, 91, 91);
+    line-height: 35px;
+}
+input{
+    border: none;
+    outline: none;
+}
+
+td select{
+    background-color: white;
+}
+
+.trr td{
+    padding-block: 2px;
+   padding-inline: 10px;
+}
+
+.third-row{
+    display: flex;
+    gap: 25px;
+    position: relative;
+    bottom: 20px;
+    padding-inline: 25px;
+}
+.third-row p {
+    font-size: 13px;
+    color: #0063f7;
+}

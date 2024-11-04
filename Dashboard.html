@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <script src="https://kit.fontawesome.com/7e4bb5f098.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-side-main-con">
+     <div class="first-block">
+      <div class="firstline">
+      <h3>Super Admin</h3>
+      <i class="fa-solid fa-gear"></i>
+      </div>
+      <p>admin56@gmail.com</p>
+     <hr class="h">
+        <ul>
+            <li class="act"><span class="left-icon"><i class="fa-solid fa-user"></i></span> <span class="Right-text">Internal User</span></i></li>
+            <li><span class="left-icon"><i class="fa-solid fa-book"></i></span> <span class="Right-text">Question Sets</span></i></li>
+            <li><span class="left-icon"><i class="fa-solid fa-file-contract"></i></span> <span class="Right-text">Contracts</span></i></li>
+        </ul>
+        <br>
+        <br>
+        <hr color="#4890FE">
+        <div class="Plus">
+          <i class="fa-regular fa-plus"></i> Add Category
+        </div>
+        <div class="backto">
+          <i class="fa-solid fa-arrow-left"></i> <p>Back to portal</p>
+        </div>
+        <hr class="h">
+        <div class="one-last">
+        <p class="li"> <a href="profile.html">My Profile</a> </p>
+          <p>Permision</p>
+          <p>CH Managemnet</p>
+          <hr class="h">
+        </div>
+       <div class="last">
+        <i class="fa-solid fa-power-off"></i>
+        <p> <a href="index.html" style="color: white; text-decoration: none;">Logout</a></p>
+       </div>
+
+     </div>
+    </div>
+    <div class="right-side-main-con">
+  
+      <div class="header">
+      <div class="icon-text">
+        <i class="fa-duotone fa-solid fa-user"></i> <p>Internal User</p> </div>
+        <div class="inputs">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" placeholder="Serach user by name" id="serchInput" onkeyup="searching()">
+        
+      <div class="pluss">
+        +
+      </div>
+      </div>
+      </div>
+      <div class="second-col-change">
+      <div class="second-main">
+
+      <div class="second-first">
+        <p class="sp">All Divisions</p>
+        <p>My division</p>
+        <p>Manged</p>
+        <p>Unmanged</p>
+      </div>
+      <div class="second-sec">
+        <p>Filter</p>
+      </div>
+      </div>
+
+      <div class="tables-print">
+        <table id="Table">
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role(s)</th>
+            <th>Acess level</th>
+            <th>Date added</th>
+          </tr>
+        </table>
+      </div>
+
+      </div>
+        
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
