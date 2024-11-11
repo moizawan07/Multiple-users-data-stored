@@ -4,30 +4,40 @@
     box-sizing: border-box;
    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
+    list-style: none;
+}
+body{
+    background-color: #1A1B1E;
 }
 
 .main-container{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
+    align-items: start;
 }
 
 .left-main-con{
-    width: 19%;
-    box-shadow: 0px 0px 2px black;
+    width: 17%;
+    height: 142.5vh;
     padding-inline: 1%;
-    padding-top: 20px;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 0px 5px darkturquoise;
+    background-color: #2E3033;
 }
 .right-main-con{
-    width: 79.5%;  
+    height: 100vh;
+    /* border: 1px solid grey; */
+    width: 82.7%
 }
 .p{
     display: inline-block;
 }
 .first-line p{
-  font-size: 13px;
-  color: grey;
+  font-size: 10px;
+  margin-top: 3px;
+  color: white;
 }
 .first-line img{
     width: 50px;
@@ -35,225 +45,348 @@
     top: 19px;
 }
 .first-line h4{
-   margin-top: 5px;
+  position: relative;
+  bottom: 15px;
     font-weight: bold;
+    color: white;
+    text-transform: uppercase;
     margin-left: 55px;
 }
 
-
-select{
-    width: 180px;
-    height: 35px;
-    margin-top: 25px;
-    border-radius: 10px;
-    background-color: #659ff7;
-    outline: none;
-    border: none;
-    font-weight: bold;
-    padding-inline: 10px;
-}
-option{
-    background-color: white;
-}
-
 .third-line{
-    padding-top: 50px;
-    line-height: 55px;
+    padding-top: 25px;
+    padding-inline: 15px;
+    line-height: 45px;
 }
 .third-line p, .third-line p a{
     font-size: 15px;
-    color: rgb(117, 115, 115);
+   color: white;
    text-decoration: none;
+   margin-top: 20px;
+   border-radius: 10px;
+   background-color: #1A1B1E;
+   box-shadow: 0px 0px 5px lightseagreen;
+   padding-left: 15px;
 }
 .third-line  i{
-    color: black;
-    margin-right: 3px;
-}
-.h{
-    width: 128%;
-    margin-top: 20px;
-    border: 0.55px solid rgb(183, 181, 181);
-    position: relative;
-    right: 15%;
+    color: white;
+    margin-right: 10px;
 }
 
-i{
+
+/* i{
     color: black;
-}
+} */
 
 .fouth-line {
-    padding-top: 20px;
-}   
-
-.headre{
-    padding-top: 20px;
+    margin-top: 70px;
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+   box-shadow: 0px 0px 8px darkgoldenrod;
+   background-color: #1A1B1E;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   color: white;
+}
+.fifth-line{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.inputs{
-    width: 35%;
-    border-radius: 10px;
-    align-content: center;
+.fifth-line .mainimg{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 5px cyan;
+}
+.fifth-line h3{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(235, 173, 14);
+}
+.fifth-line p{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.backtodi{
+    width: 40px;
     height: 40px;
-    box-shadow: 0px 0px 5px grey;
-    margin-left: 20px;
+    text-align: center;
+    background-color: #ECF2FC;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 0px 3px lightsalmon;
+}
+.backtodi img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+}
+.fouth-line h4{
+    position: relative;
+    bottom: 0px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.fouth-line i{
+    margin-right: 15px;
+}
+
+.inputs{
+    width: 100%;
+    border-radius: 25px;
+    align-content: center;
+    height: 35px;
+    box-shadow: 0px 0px 5px cyan;
+    margin-top: 25px;
 }
 .inputs i{
     margin-left: 15px;
-    color: grey;
+    color: white;
+}
+::placeholder{
+    color: white;
 }
 .inputs input{
     width: 80%;
     border: none;
     outline: none;
+    background-color: transparent;
+}
+.background-image{
+    width: 100%;
+    position: relative;
+    height: 300px;
+}
+.background-image img{
+    width: 100%;
+    height: 100%;
 }
 
-.full{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-right: 20px;
-}
-.full img{
-    width: 50px;
-    height: 50px;
+.cover-icon{
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-}
-.full i{
-    font-size: 20px;
-}
-.full b{
-    font-weight: bold;
-}
-
-.second-header{
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid rgb(218, 214, 214);
-    background-color: rgb(240, 239, 239);
-
+  background-color: white;
+   text-align: center;
+   position: absolute;
+   top: 25px;
+   right: 25px;
 }
 
-.second-fir{
+.cover-icon i{
+    margin-top: 12px;
+}
+
+.user-image-main{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom:100px;
+    left: 30px;
+}
+.user-image-main img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px cyan;
+}
+
+.header1{
+    position: relative;
+    bottom: 85px;
     display: flex;
     justify-content: space-between;
-    padding-right: 15px;
     align-items: center;
-    padding-left: 10px;
 }
-
-.firsttt h2{
-    font-size: 18px;
-    font-weight: 600;
+.header1 h2{
+    font-weight: bold;
+    margin-left: 50px;
+   color: white;
 }
-.firsttt b{
-    font-size: 14px;
-}
-.red{
-    color: red;
-}
-
-.seconddd{
+.two-main{
     display: flex;
     gap: 15px;
+    margin-right: 25px;
+    align-items: center;
 }
-.seconddd p{
-    font-size: 12px;
-    font-weight: 500;
+.sahre-main{
+    width: 120px;
+    height: 35px;
+  border-radius: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    align-content: center;
+    box-shadow: 0px 0px 7px rgb(98, 98, 242);
+}
+.two-main i{
+    color: white;
+    margin-left: 10px;
+}
+
+.View-profile-main{
+    width: 140px;
+    height: 35px;
+  border-radius: 20px;
+    text-align: center;
+    background-color:rgb(98, 98, 242);
+    color: white;
+    align-content: center;
+    box-shadow: 0px 0px 10px rgb(42, 41, 41);
+}
+
+.pro{
+    border-radius: 20px;
+    border: 1px solid cyan;
+    font-weight: bolder;
     padding-inline: 10px;
-    padding-block: 3px;
-    background-color: #A3B6F7;
-    border-radius: 5px;
+    padding-block: 4px;
+    font-size: 14px;
+    background-color: #1A1B1E;
+   color: white;
+    position: relative;
+    bottom: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.55px;
 }
 
-.second-lase-main{
-    border: 1px solid rgb(226, 218, 218);
-    margin-top: 10px;
-    padding-top: 10px;
-    margin-inline: 10px;
-    background-color: white;
-    border-radius: 5px;
-    padding-inline: 20px;
-}
-.last-main{
-    border-radius: 5px;
-    padding-bottom: 30px;
-    border: 1px solid rgb(202, 200, 200);
+.email{
+    display: inline-block;
+    position: relative;
+    bottom: 85px;
+    left: 53px;
+    color:white;
+    font-size: 12px;
 }
 
-.first-row{
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to right, #F9F7F1, #EBEEF8);
-}
-
-.second-row{
-    padding-inline: 20px;
+.header-2{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
     position: relative;
     bottom: 50px;
 }
-.second-row img{
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+.left-main-head2{
+    width: 40%;
+  padding-left: 50px;
 }
-.second-row h3{
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 10px;
+.left-main-con h2{
+  font-size: 19px;
+    font-weight: bolder;
 }
-.second-row p {
-    font-size: 13px;
-    color: rgb(121, 119, 119);
-}
-
-.table{
-    padding-top: 50px;
-    padding-inline: 15px;
-}
-table{
-    width: 100%;
-    border: 1px solid rgb(235, 232, 232);
-    border-collapse: collapse;
-}
-td{
-   display: flow-root;
-    padding-block: 5px;
-    padding-inline: 15px;
-    color: rgb(89, 89, 89);
-    box-shadow: 0px 0px 3px rgb(8, 8, 8);
-}
-th{
-    font-weight: bold;
-    color: rgb(46, 45, 45);
-}
-tr{
-    border: 1px solid rgb(92, 91, 91);
-    line-height: 35px;
-}
-input{
-    border: none;
-    outline: none;
+.left-main-head2 p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(80, 79, 79);
 }
 
-td select{
-    background-color: white;
-}
-
-.trr td{
-    padding-block: 2px;
-   padding-inline: 10px;
-}
-
-.third-row{
+.right-main-head2{
+    width: 60%;
+   background-color: white;
+   border-radius: 35px;
+   background-color: #1A1B1E;
+   border: 1px solid grey;
+   border: 1px solid cyan;
+   box-shadow: 0px 0px 3px cyan;
+    padding-inline: 3%;
+    padding-block: 25px;
+    margin-right: 45px;
     display: flex;
-    gap: 25px;
-    position: relative;
-    bottom: 20px;
-    padding-inline: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 25px;
+   color: white;
 }
-.third-row p {
-    font-size: 13px;
-    color: #0063f7;
+.right-main-head2 p{
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    color: rgb(82, 82, 82);
+    color: aqua;
+}
+.first-row{
+  width: 47%;
+  /* border: 1px solid black; */
+  /* border: 1px solid black; */
+}
+.name{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+ border: 1px solid grey;
+ position: relative;
+ padding-left: 5px;
+}
+#Showrole{
+    padding-left: 5px;
+}
+#Showrole i{
+    color: rgb(87, 87, 87);
+   color: cyan;
+}
+#name, #pass, #Email{
+    margin-left: 12px;
+}
+#iconname{
+   position: absolute;
+   right: 15px;
+}
+#iconname i{
+    font-size: 14px;
+    color: grey;
+}
+.mainss{
+    background-color: rgb(249 251 254);
+    background-color: #1A1B1E;
+    background-color: #2E3033;
+}
+
+.last-header{
+    display: flex;
+    padding-top: 10px;
+    /* align-items: center; */
+}
+.last-first-haeder{
+    width: 100%;
+}
+.last-first-haeder img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+   position: relative;
+   bottom: 5px;
+   box-shadow: 0px 0px 5px rgb(235, 171, 9);
+}
+.forselectimg-icon{
+    width: 60px;
+    height: 60px;
+ background-color: #e7ebf7;
+   border-radius: 50%;
+   text-align: center;
+   margin: auto;
+}
+.forselectimg-icon img{
+    width: 50%;
+    height: 55%;
+    border-radius: 50%;
+    margin-top: 11px;
+    margin-left: 1px;
+}
+
+.last-second-header{
+    padding-top: 50px;
+    width: 75%;
+  border: 1px dotted lightseagreen;
+    padding-bottom: 30px;
+    text-align: center;
+    line-height: 45px;
 }

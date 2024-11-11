@@ -12,122 +12,133 @@
         <div class="left-main-con">
             <div class="first-line">
                 <img src="/Images/log.png" alt="">
-                <p class="p">Sidebar and mini sidebar with </p>
                 <h4>Brand header 🚀</h4>
-      <div class="second-line">
-        <i class="fa-solid fa-grid-2" aria-hidden="false"></i>
-        <select>
-            <option>Dashboard</option>    
-            <option>Admin Student</option>
-          <option>Student About</option>
-          <option>Parents Guard</option>
-          <option>Teacher Documnet</option>
-        </select>
-      </div>
+                <div class="second-line">
+                    <div class="inputs">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Serach...">
+                       </div>
+                </div>
       <div class="third-line">
-          <p> <i class="fa-solid fa-children"></i> Students</p>
-          <p><i class="fa-solid fa-chalkboard-user"></i> Teachers</p>
-          <p><i class="fa-solid fa-person-pregnant"></i> Parents</p>
-          <p><i class="fa-solid fa-hospital"></i> Library</p>
-          <p><i class="fa-solid fa-landmark"></i> Class</p>
-          <p><i class="fa-solid fa-book"></i> Subject</p>
-          <p><i class="fa-solid fa-bell"></i> Class routine</p>
-          <p><i class="fa-solid fa-mug-saucer"></i> <a href="Dashboard.html">Dashboard</a></p>
-          <hr class="h">
+        <ul>
+         <li><p><i class="fa-solid fa-children"></i>Home</p></li>
+         <li><p><i class="fa-solid fa-chalkboard-user"></i>Tasks</p></li>
+         <li><p><i class="fa-solid fa-person-pregnant"></i> Users</p></li>
+         <li><p><i class="fa-solid fa-hospital"></i>Api</p></li>
+        <li><p><i class="fa-solid fa-landmark"></i>Subscription</p></li>
+        <li><p><i class="fa-solid fa-book"></i>Settings</p></li>
+        <li><p><i class="fa-solid fa-bell"></i>Help & Support</p></li>
+        <li><p> <i class="fa-solid fa-layer-group"></i>Help line</p></li>
+          </ul>
+          <!-- <p><i class="fa-solid fa-mug-saucer"></i> <a href="Dashboard.html">Dashboard</a></p> -->
+          <!-- <hr class="h"> -->
     </div>
     <div class="fouth-line">
-        <p> <i class="fa-solid fa-layer-group"></i> Help line</p>
+      <h4>Go Pro</h4>
+        <i style="color: white;" class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <hr style="margin-top: 25px;">
+    <div class="fifth-line">
+        <img style="background-color: white;" src="/Images/user-removebg-preview.png" id="imgchange"  class="mainimg">
+        <div class="fifth-texts">
+        <h3>Moiz Ahmed</h3>
+          <p>Basic Member</p>
+        </div>
+        <div class="backtodi">
+       <a href="Dashboard.html"> <img src="/Images/back to-icon.png" class="backto"></a>
+        </div>
     </div>
     </div>
 
         </div>
-        <div class="right-main-con">
-         <div class="headre">
-           <div class="inputs">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Serach...">
-           </div>
-           <div class="full">
-            <i class="fa-regular fa-envelope"></i>
-            <i class="fa-regular fa-bell"></i>
-            <img src="/Images/img.png" alt=""> <b>Moiz Ahmed</b>
-           </div>
-         </div>
-         <div class="second-header">
-            <div class="second-fir">
-                <div class="firsttt">
-                <h2>Admin Dashboard</h2>
-                <b>Home</b> <b class="red">>  Student About</b> 
+         <div class="right-main-con">
+            <div class="background-image">
+                <img src="https://marketplace.canva.com/EAE-lBHRNe4/1/0/1600w/canva-black-and-blue-neon-modern-black-friday-sale-facebook-cover-w5R1z5YvK1k.jpg" alt="">
+                <div class="cover-icon">
+                    <i class="fa-solid fa-pencil"></i>
                 </div>
-                <div class="seconddd">
-                    <p>Notification - (20)</p>
-                    <p>Events - (20)</p>
-                    <p>Attendence - (100 % 80)</p>
-                </div>
-            
             </div>
-            <div class="second-lase-main">
-                <div class="last-main">
+            <div class="mainss">
+            <div class="user-image-main">
+                <img style="background-color: white;" src="/Images/user-removebg-preview.png"  id="imgchange1"  alt="">
+            </div>
+            <div class="header1">
+                <h2>Moiz Ahmed <span class="pro">Pro</span></h2>
+                <div class="two-main">
+                    <div class="sahre-main"> Share
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <div class="View-profile-main"> View-Profile
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="email">moizawan@gmail.com</p>
+            <div class="header-2">
+                <div class="left-main-head2">
+                    <h2 style="color: white;">Personal Info</h2>
+                    <p style="color: rgb(119, 239, 239); font-size: 12px;">You can change your personal <br>
+                    information settings here</p>
+                </div>
+                <div class="right-main-head2">
                     <div class="first-row">
+                   <p>FullName</p>
+                   <div class="name">
+                    <span id="Showrole"><i class="fa-solid fa-user-large"></i></span>
+                       <span id="name">Moiz Ahmed</span>
+                       <span id="iconname"><i onclick="editProfileText(getDataLocalstorage[getDataLocalstorage.length -1].Name)" class="fa-solid fa-pencil"></i></span>
+                </div>
+                </div>
 
-                    </div>
-                    <div class="second-row">
-                        <img src="/Images/img.png" alt="">
-                        <h3>Moiz Ahmed</h3>
-                        <p>A student information collection  form is a document used by teachers to collect data <br> aboout their students</p>
-                    </div>
-                    <div class="third-row">
-                        <p>⭐ Moiz ahmed</p>
-                        <p>⭐ 92+ 258879512</p>
-                        <p>⭐ moiz@gmail.com</p>
-                    </div>
-                    <div class="table">
-                        <table>
-                            <tr>
-                                <th>First Name</th>
-                                <td>Moiz</td>
-                                <th>Last Name</th>
-                                <td>Ahmed</td>
-                                <th>Occupation</th>
-                                <td>Web developer</td>
-                            </tr>
+                <div class="first-row">
+                    <p>Email Adress</p>
+                    <div class="name">
+                        <span id="Showrole"><i class="fa-solid fa-user-large"></i></span>
+                        <span id="Email">moiz@gmail.com</span>
+                        <span id="iconname"><i  onclick="editProfileText(getDataLocalstorage[getDataLocalstorage.length - 1].Email)" class="fa-solid fa-pencil"></i></span>
+                 </div>
+                 </div>
 
-                            <tr>
-                                <th>FatherName</th>
-                                <td>Maqsood</td>
-                                <th>Id</th>
-                                <td>274526</td>
-                                <th>Date of Birth</th>
-                                <td><input type="date"></td>
-                            </tr>
-                            <tr>
-                                <th>Gender</th>
-                             <td><input type="radio" checked> Male <input type="radio"> Female</td>
-                                <th>Religion</th>
-                                <td>Islam</td>
-                                <th>Email</th>
-                                <td>moiz@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <th>Admision date</th>
-                                <td><input type="date"></td>
-                                <th>Class</th>
-                                <td>inter</td>
-                                <th>Roll</th>
-                                <td>57</td>
-                            </tr>
-                            <tr class="trr">
-                                <th>Subject</th>
-                                <td colspan="3"><select> <option>5+</option> <option>10+</option> <option>15+</option> <option>20+</option></select></td>
-                                <th>Location</th>
-                                <td><select> <option>Karchi</option> <option>Lahore</option> <option>Islamabad</option> <option>peshawar</option></select></td>
-                            </tr>
-                        </table>
-                    </div>
+                 <div class="first-row">
+                    <p>Password</p>
+                    <div class="name">
+                        <span id="Showrole"><i class="fa-solid fa-lock"></i></span>
+                        <span id="pass">247458</span>
+                        <span id="iconname"><i  onclick="editProfileText(getDataLocalstorage[getDataLocalstorage.length - 1].Pass)" class="fa-solid fa-pencil"></i></span>
+                 </div>
+                 </div>
+
+                 <div class="first-row">
+                    <p>Role</p>
+                    <div class="name">
+                        <span id="Showrole"><i class="fa-solid fa-caret-down"></i></span>
+                        <span id="name">Super Admin</span>
+                        <span id="iconname"><i class="fa-solid fa-pencil"></i></span>
+                 </div>
+                 </div>
+                 <div class="last-header">
+                    <div class="last-first-haeder">
+               <p style="color: rgb(226, 166, 15);">Change Avator</p> <br>
+               <img style="background-color: white;" src="/Images/user-removebg-preview.png" id="imgchange2" alt="">
+                   </div>
+                   </div>
+                   <div class="last-second-header">
+                     <div class="forselectimg-icon">
+                        <label for="input-file">
+                       <img src="/Images/select-img.png"alt="">
+                       </label>
+                       <input style="display: none;" type="file" id="input-file" onchange="selectImg()">
+                     </div>
+                     <p style="font-weight: 300; color: white;"><span style="color: cyan; font-weight: bold;">Click here </span>to upload your file</p>
+                     <p style="font-size: 15px;color: grey;">Support format: SVG, PNG, JPEG</p>
+                   </div>
+                 </div>
+                 </div>
                 </div>
             </div>
-        </div>
-        </div>
+            </div>
+         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
