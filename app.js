@@ -83,22 +83,28 @@ let getDataLocalstorage = JSON.parse(localStorage.getItem('Datasssarr'))
 
 // console.log(getDataLocalstorage);
 
-
+// login functio start -->
 function login(){
-    
-    let email2 = document.getElementById('email2').value
-    let pass2 = document.getElementById('password2').value
 
-  if((email2 == getDataLocalstorage[getDataLocalstorage.length -1].Email) && 
+   if(!getDataLocalstorage){   // Check user fill the SignUp form or Not
+      alert('SignUp first then Login ⚠')
+      window.location.href = 'index.html'
+   }
+
+    let email2 = document.getElementById('email2').value   // login email get
+    let pass2 = document.getElementById('password2').value   // login Password get
+
+  if((email2 == getDataLocalstorage[getDataLocalstorage.length -1].Email) &&   // Check user fill the Data Same us signup --->
       pass2 == getDataLocalstorage[getDataLocalstorage.length -1].Pass){
          alert('WELCOME TO THE HOME PAGE🚀')
          window.location.href = 'Dashboard.html'
 
+      }
+      else{               // if data not same as signUp then alert
+      alert('insert coorect data')  
    }
-   else{
-      alert('insert coorect data')
-   }
-}
+
+}   // login function bracket
 
 
 
@@ -190,32 +196,36 @@ if(roleselect == 'Manager'){
    </tr>`
 }
 }
-//  Explain this condition if user render profile page to profile.html ki javascript chale gi baqi nhi -->
-let fileDecidePrint 
-if(window.location.href.indexOf('D') != -1){
-   fileDecidePrint = 'Dashboard'
-}
-else{
-   fileDecidePrint = 'Profile'
-}
-//   delete row function -->
-if(fileDecidePrint == 'Dashboard'){
 
-let tablse = document.getElementById('Table')
-let trs = table.getElementsByTagName('tr')
-let td1 =  trs[1].getElementsByTagName('td')[0]
+//  Explain this condition if user render profile page to profile.html ki javascript chale gi baqi nhi -->
+
+// let fileDecidePrint 
+// if(window.location.href.indexOf('D') != -1){
+//    fileDecidePrint = 'Dashboard'
+// }
+// else{
+//    fileDecidePrint = 'Profile'
+// }
+//   delete row function -->
+// if(fileDecidePrint == 'Dashboard'){
+
+// function tablealignment(){
+if(window.location.href.indexOf('Dashboard') != -1){
+   alert('hello')
+   let tablse = document.getElementById('Table')
+   let trs = table.getElementsByTagName('tr')
+   let td1 =  trs[1].getElementsByTagName('td')[0]
     td1.innerHTML = 1
     if(trs[4]){
      let td4 =  trs[4].getElementsByTagName('td')[0]
      td4.innerHTML = 4
 }
-// console.log(trs)
 
+// }  tablealignment()   // functionCall
 
 
 function deletes(idnum){
     
-
    if(trs[idnum] == undefined){
       if(getDataLocalstorage[getDataLocalstorage.length -1].Role == 'Employe'){
          trs[1].style.display = 'none'
@@ -226,17 +236,9 @@ function deletes(idnum){
    trs[idnum].style.display = 'none'
    }
 }
+}
 
-
-// let showrolename = document.getElementById('rolename') || 'moi'
-// showrolename.innerHTML = getDataLocalstorage[getDataLocalstorage.length - 1].Role
-
-// let emailshowdashboard = document.getElementById('emailshow') || 'moiz'
-// emailshowdashboard.innerHTML = getDataLocalstorage[getDataLocalstorage.length - 1].Email
-
-
-
-console.log(window.location.href)
+// console.log(window.location.href)
 
 function searching(){
 
@@ -276,14 +278,21 @@ function searching(){
     // toggle side bar function
 
     
-   } // file checker if complete here {}
+   // } // file checker if complete here {}
    
-else{
+// else{
 
 // profile code 
-   document.getElementById('name').innerHTML = getDataLocalstorage[getDataLocalstorage.length -1].Name
-   document.getElementById('Email').innerHTML = getDataLocalstorage[getDataLocalstorage.length -1].Email
-   document.getElementById('pass').innerHTML = getDataLocalstorage[getDataLocalstorage.length -1].Pass
+
+if(window.location.href.indexOf('profil') != -1){
+
+ let namechnage = document.getElementById('name').innerHTML = getDataLocalstorage[getDataLocalstorage.length -1].Name
+ let emailChange = document.getElementById('Email').innerHTML = getDataLocalstorage[getDataLocalstorage.length -1].Email
+document.getElementById('pass').innerHTML = getDataLocalstorage[getDataLocalstorage.length -1].Pass
+document.getElementById('bigname').innerHTML = namechnage
+document.getElementById('bigEmail').innerHTML = emailChange
+document.getElementById('lastname').innerHTML = namechnage
+}
 
 
 function editProfileText(valueGet){
@@ -301,7 +310,8 @@ function editProfileText(valueGet){
       window.localStorage.setItem('Datasssarr', JSON.stringify(convertobj));
       // console.log(cart)
 
-     document.getElementById(ids[0]).innerHTML = changeValue
+     let changevaluestored = document.getElementById(ids[0]).innerHTML = changeValue
+     document.getElementById('bigname').innerHTML = changevaluestored
    }
 
    else if(valueGet == getDataLocalstorage[getDataLocalstorage.length -1].Email){   
@@ -312,7 +322,9 @@ function editProfileText(valueGet){
       window.localStorage.setItem('Datasssarr', JSON.stringify(convertobj));
       // console.log(cart)
 
-     document.getElementById(ids[1]).innerHTML = changeValue
+       let changevaluestored = document.getElementById(ids[1]).innerHTML = changeValue;
+       document.getElementById('bigEmail').innerHTML = changevaluestored
+
       }
    else{
       var data = window.localStorage.getItem('Datasssarr');
@@ -338,7 +350,7 @@ function selectImg(){
    console.log(imgsrc)
 }
 
-}
+// }
 
 //profile code
 
