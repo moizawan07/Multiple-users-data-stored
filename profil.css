@@ -7,19 +7,21 @@
     list-style: none;
 }
 body{
+    width: 100%;
     background-color: #1A1B1E;
+    border: 1px solid white;
 }
 
 .main-container{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    /* align-items: start; */
 }
 
 .left-main-con{
     width: 17%;
-    height: 142.5vh;
+    height: auto;
     padding-inline: 1%;
     position: sticky;
     top: 0px;
@@ -27,9 +29,15 @@ body{
     background-color: #2E3033;
 }
 .right-main-con{
-    height: 100vh;
+    /* height: 100vh; */
     /* border: 1px solid grey; */
     width: 82.7%
+}
+
+#toggleprofile{
+    color: white;
+    font-size: 20px;
+    display: none;
 }
 .p{
     display: inline-block;
@@ -390,3 +398,251 @@ body{
     text-align: center;
     line-height: 45px;
 }
+
+@media (max-width: 1150px){
+    .name{
+        font-size: 15px;
+    }
+    #name, #pass, #Email{
+        margin-left: 2px;
+    }
+    .last-first-haeder{
+        font-size: 14px;
+    }
+    .last-second-header {
+        width: 70%;
+    }
+    .third-line{
+        padding-inline: 5px;
+    }
+    .fifth-line h3 {
+        text-align: center;
+    }
+    .fifth-line p{
+        text-align: center;
+    }
+    .first-line h4 {
+        font-size: 12px;
+        margin-left: 37px;
+        bottom: 5px;
+    }
+    .first-line img {
+        width: 35px;}
+
+        .backtodi img{
+            right: 10px;
+            width: 40%;
+        }
+        .inputs input {
+            width: 80px;}
+}
+
+@media (max-width : 1030px){
+    .first-line img {
+        width: 55px;
+        margin-left: 40px;
+
+}
+        .first-line h4 {
+            font-size: 15px;
+            margin-left: 5px;
+            bottom: -20px;
+        }
+        .inputs {
+            margin-top: 40px;
+        }
+        .third-line p, .third-line p a{
+            font-size: 14px;
+          padding-left: 10px;
+        }
+        .first-line h4 {
+            font-size: 14px;
+            bottom: 0px;
+            padding-left: 10px;
+        }
+        .fifth-line {
+            flex-direction: column;
+            text-align: center;
+            row-gap: 30px;
+        }
+        .fifth-line .mainimg {
+            margin-bottom: 0px;
+            }
+            .fifth-line img{
+                margin-left: 0px;
+            }
+            .fifth-line p {
+                font-size: 13px;}
+                .fifth-line h3{
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+                
+                .backtodi {
+                    width: 50px;
+                    height: 50px;}
+
+                    .backtodi img {
+                        /* left: 7px; */
+                        right: 5px;
+                        height: 50%;
+                        width: 65%;
+                    }    
+                    .first-line h4{
+                        top: 30px;
+                        padding-left: 0px;
+                       margin-bottom: 20px;
+                    } 
+                    .fouth-line h4{
+                        top: 0px;
+                    }    
+                    /* .first-line img{
+                        /* margin-left: 45px; */
+                    /* } */ 
+
+                    .pro {
+                        margin-left: 10px;
+                    font-size: 13px;}        
+}
+
+@media (max-width: 950px){
+    .left-main-con{
+        padding-inline: 5px;
+    }
+    .third-line p{
+        font-size: 10px;
+        line-height: 25px;
+    }
+    .fouth-line h4{
+        top: 10px;
+        left: 3px;
+        font-size: 10px;
+    }
+    .fouth-line{
+        height: 30px;
+    }
+    .fifth-line .mainimg {
+        width: 36px;
+        height: 36px;}
+        .backtodi img {
+            right: 10px;
+            height: 50%;
+            width: 46%;
+        }  
+        .first-line h4{
+            font-size: 12px;
+        }
+        .user-image-main {
+            width: 119px;
+            height: 119px;
+        }
+
+        .left-main-head2 {
+            width: 30%;
+            padding-left: 20px;}
+
+            .header1 h2{
+                margin-left: 40px;}
+                .email{
+                    left: 35px;
+                    font-size: 10px;
+                }
+
+                .sahre-main {
+                    width: 100px;
+                    height: 30px;
+                    font-size: 13px;
+                }
+                  .View-profile-main{ 
+                    width: 115px;
+                    height: 30px;
+                font-size: 13px;}
+                .right-main-head2 {
+                    width: 65%;}
+                    #name, #pass, #Email{
+                        margin-left: 5px;
+                        font-size: 12px;
+                    }
+                    
+}
+
+@media (max-width : 780px){
+    .left-main-con{
+        display: none;
+        width: 30%;
+    }
+    #toggleprofile{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        z-index: 1;
+    }
+    .right-main-con{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px){
+    .name{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 680px){
+    .header-2{
+        flex-direction: column;
+        row-gap: 30px   ;
+    }
+    .left-main-head2{
+      margin-top: 40px;
+      width: 100%;
+    }
+    .right-main-head2{
+        width: 80%;
+        margin: auto;
+    }
+    .last-first-haeder{
+       position: relative;
+      left: 150px;
+       text-align: center;
+    }
+    .last-first-haeder img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .last-second-header {
+        width: 100%;
+    }
+    #Email{
+        font-size: 9px;
+    }
+}
+
+@media (max-width:550px){
+    .last-first-haeder{
+        left: 0px;
+    }
+    .header1{
+        flex-direction: column;
+        align-items: start; 
+    }
+    .two-main{
+        position: relative;
+        top: 70px;
+        left: 25px;
+    }
+    .right-main-head2{
+        flex-direction: column;
+    }
+    .right-main-head2 p{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .name{
+        width: 200%;
+    }
+}
+

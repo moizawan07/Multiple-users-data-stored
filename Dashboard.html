@@ -9,14 +9,16 @@
 </head>
 <body>
   <div class="main-container">
-    <i style="display: none;" class="fa-solid fa-bars" id="showicon" onclick="toggleshow()"></i>
+      <!-- <div class="two-inone"> -->
+        <!-- <i  class="fa-solid fa-bars" id="showiconmedium" onclick="csstogle()"></i> -->
+    <i class="fa-solid fa-bars" id="showicon"  onclick="toggleshow()"></i>
     <div class="left-side-main-con" id="show-hide">
      <div class="first-block">
        <div class="firstline">
         <i class="fa-solid fa-bars" onclick="toggle()"></i>
-          <h3 style="margin-left: 20px; color: cyan; text-shadow: 0px 0px 10px black;">© MOIZ AHMED</h3>
+          <h3 style="margin-left: 10px; color: cyan; text-shadow: 0px 0px 10px black;">© MOIZ AHMED</h3>
       </div>
-      <p style="font-size: 12px; margin-top: 35px; margin-left: 15px;">Adminstrator</p>
+      <p style="font-size: 12px; margin-top: 35px; margin-left: 15px;" class="ad">Adminstrator</p>
         <ul>
             <li class="act"><span class="left-icon"><i class="fa-solid fa-list"></i></span> <span class="Right-text">Dashboard</span></i></li>
             <li><span class="left-icon"><i class="fa-solid fa-paper-plane"></i></span> <span class="Right-text">Analytics</span></i></li>
@@ -27,7 +29,7 @@
         </ul>
         <br>
         <br>
-        <p style="margin-left: 15px; font-size: 12px;">Settings</p>
+        <p style="margin-left: 15px; font-size: 12px;" class="ad">Settings</p>
         <div class="one-last">
         <ul>
           <li><span class="left-icon"><i class="fa-solid fa-circle-user"></i></span> <span class="Right-text"><a class="linka" href="profile.html">Profile</a></span></i></li>
@@ -36,7 +38,7 @@
           <li><span class="left-icon"><i class="fa-solid fa-book"></i></span> <span class="Right-text"><a class="linka" href="index.html">logout</a></span></i></li>
         </ul>
         </div>
-      <p style="margin-top: 19px; margin-left: 10px;">© CopyRight Version 2024</p>
+      <p style="margin-top: 19px; margin-left: 10px;" class="co">© CopyRight Version 2024</p>
      </div>
     </div>
     <div class="center-side-main-con" id="full-size">
@@ -76,6 +78,7 @@
       <!-- </div> -->
         
     </div>
+    <!-- </div>  -->
     <div class="end-side-main-con">
       <div class="end-first-row">
       <h3> <span id="Date">10</span> 
@@ -87,8 +90,10 @@
       <img class="profile1img" src="img.png" alt="">
       </div>
       <div class="end-last-row">
-        <img src="dashboord ui.sidebar (2).png" alt="">
+        <img src="dashboord ui.sidebar (2).png" alt="" class="firstremove">
       </div>
+      <img src="dashboord ui.sidebar (1).png" alt="" class="last">
+      <img src="last.png" alt="" class="last">
     </div>
   </div>
   <script src="app.js"></script>

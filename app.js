@@ -211,9 +211,9 @@ if(roleselect == 'Manager'){
 
 // function tablealignment(){
 if(window.location.href.indexOf('Dashboard') != -1){
-   alert('hello')
+   // alert('hello')
    let tablse = document.getElementById('Table')
-   let trs = table.getElementsByTagName('tr')
+   let trs = table.getElementsByTagName('tr');
    let td1 =  trs[1].getElementsByTagName('td')[0]
     td1.innerHTML = 1
     if(trs[4]){
@@ -270,9 +270,8 @@ function searching(){
       let showicon = document.getElementById('showicon').style.display = 'block'
     }
     function toggleshow(){
-       let leftSide = document.getElementById('show-hide').style.display = 'block'
-      let centerfullSize = document.getElementById('full-size').style.margin = '0px';
-        let showicon = document.getElementById('showicon').style.display = 'none'
+      let leftSide = document.getElementById('show-hide').style.display = 'block'
+      let showicon = document.getElementById('showicon').style.display = 'none'
     }
 
     // toggle side bar function
@@ -285,8 +284,9 @@ function searching(){
 // profile code 
 
 if(window.location.href.indexOf('profil') != -1){
-
+//  alert('hello')
  let namechnage = document.getElementById('name').innerHTML = getDataLocalstorage[getDataLocalstorage.length -1].Name
+ console.log(namechnage)
  let emailChange = document.getElementById('Email').innerHTML = getDataLocalstorage[getDataLocalstorage.length -1].Email
 document.getElementById('pass').innerHTML = getDataLocalstorage[getDataLocalstorage.length -1].Pass
 document.getElementById('bigname').innerHTML = namechnage
@@ -350,7 +350,18 @@ function selectImg(){
    console.log(imgsrc)
 }
 
-// }
+
+function profile_toggle(){
+  let stored =  document.getElementById('show');
+
+   if(stored.style.display == 'none'){
+      stored.style.display = 'block'
+   }
+   else{
+      stored.style.display = 'none'
+   }
+
+}
 
 //profile code
 
