@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -15,21 +16,23 @@
 }
 
 .containerfor-signup{
-    width: 380px;
+    width: 400px;
     background-color: #000000;
-    box-shadow: 0px 0px 15px #04e5f5;
+    box-shadow: 0px 0px 5px #04e5f5;
+    border: 1.2px solid rgb(3, 246, 246);
     border-radius: 10px;
     margin: auto;
     position: relative;
     top: 42px;
     padding-top: 30px;
-    padding-inline: 45px;
+    padding-inline: 35px;
     padding-bottom: 30px;
 }
 
 h1{
     text-align: center;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .inputs{
     padding-top: 50px;

@@ -17,7 +17,8 @@
 .containerfor-login{
     width: 360px;
     background-color: #000000;
-    box-shadow: 0px 0px 15px #07e4f4;
+    box-shadow: 0px 0px 5px #04e5f5;
+    border: 1.2px solid rgb(3, 246, 246);
     border-radius: 10px;
     margin: auto;
     position: relative;
